@@ -75,6 +75,11 @@ For more commands find a [Command Line Cheat Sheet](https://www.git-tower.com/bl
 
 REPL stands for "Read Evaluate Print Loop" and starting up a Python REPL using the command `python` is one of the most basic and direct ways that we can interact with our locally installed python interpreter. A REPL acts kind of like a notebook where any variables run are stored in a global namespace and the result of each command is printed out whereupon the user is prompted again in a repeated fashion.
 
+```
+# Demo
+$ python # open the REPL (might have to use python -i on windows)
+```
+
 ### Scripts
 
 A script is a python file that is meant to be run directly. We can execute any python file from the command line by running the command  `python <my_script.py>` where you will insert the name of your python file in place of my_script.py
@@ -83,14 +88,31 @@ Scripts are meant to directly accomplish some task and usually include lots of c
 
 A script is not meant to be imported into any other file or tool. It's just some code to be run. Functions created within the script are typically for use within the script itself.
 
+```
+# Demo
+# make a file
+$ touch myfile.py
+# make some edits then run
+$ python myfile.py
+```
+
 ### Modules
 
 A module is a Python file that's intended to be imported into other scripts, modules, projects, etc. Any functions or classes that are defined within the module will be available to other files that import the module.
+
+```
+# Demo
+# add some funcs, vars to myfile
+$ python
+>>> import myfile
+>>> dir()
+```
 
 ### Packages
 
 A Package is a directory (folder) of Python Modules. A Package must include a `__init__.py`
 to distinguish it from other directories that just hold Python Scripts. Any code that is in the `__init__.py` file will be executed right when the package is imported.
+
 
 ### Libraries
 
