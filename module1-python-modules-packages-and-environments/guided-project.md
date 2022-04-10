@@ -118,6 +118,19 @@ to distinguish it from other directories that just hold Python Scripts. Any code
 
 A library is a loose term that's used to refer to large groups of packages and modules usually that serve a specific purpose. Pandas, NumPy, Scipy, etc. Are all referred to as libraries even though under the hood they may technically just be big packages or modules.
 
+### Pip/Pipenv
+
+```
+# install a library globalls
+$ pip install pandas
+$ pipenv install pandas
+```
+Open up Pipfile and take a look at it
+Start the virtual environment
+```
+$ pipenv shell  # notice how the prompt changes
+```
+
 ## Extra Resources
 
 - [Command Line Cheat Sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/)
